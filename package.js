@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'maximest-pierre:meteor-ldap',
-  version: '0.0.1',
+  name: 'maximestpierre:meteor-ldap',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Basic meteor login with ldap',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/maximest-pierre/meteor-ldap',
   // By default, Meteor will default to using README.md for documentation.
@@ -12,8 +12,9 @@ Package.describe({
 
 
 Package.onUse(function(api) {
-	api.use('yasaricli:slugify');
-	api.use('ecmascript');
+  api.versionsFrom('1.0.3.1');
+	api.use('yasaricli:slugify@0.0.5');
+	api.use('ecmascript@0.9.0');
 	api.use('underscore');
 	api.use('sha');
 
